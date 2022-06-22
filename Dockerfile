@@ -2,11 +2,11 @@ FROM ubuntu:latest
 
 RUN apt-get update && \
 apt-get install -y maven && \
-mvn archetype:generate -DgroupId=com.vogella.maven.first \
--DartifactId=com.vogella.maven.first   \
--DarchetypeArtifactId=maven-archetype-quickstart \
--DarchetypeVersion=1.4 \
--DinteractiveMode=false && \
+mvn archetype:generate -DgroupId="com.vogella.maven.first" \
+-DartifactId="com.vogella.maven.first"   \
+-DarchetypeArtifactId="maven-archetype-quickstart" \
+-DarchetypeVersion="1.4" \
+-DinteractiveMode="false" && \
 cd com.vogella.maven.first && \
 mvn compile && \
 mvn clean package && \
