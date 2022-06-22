@@ -11,9 +11,10 @@ cd com.vogella.maven.first && \
 mvn compile && \
 mvn clean package && \
 java -cp target/com.vogella.maven.first-1.0-SNAPSHOT.jar com.vogella.maven.first.App && \
-pwd && \
-cp /etc/maven/settings.xml /root/.m2/ && \
-ls -al /root/.m2/
+cp /usr/share/maven/conf/settings.xml /root/.m2/ && \
+cp /com.vogella.maven.first/pom.xml /root/.m2/ && \
+ls -al /root/.m2/ && \
+pwd
 
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
