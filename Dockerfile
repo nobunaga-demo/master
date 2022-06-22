@@ -7,7 +7,7 @@ mvn archetype:generate -DgroupId="com.vogella.maven.first" \
 -DarchetypeArtifactId="maven-archetype-quickstart" \
 -DarchetypeVersion="1.4" \
 -DinteractiveMode="false" && \
-cd com.vogella.maven.first && \
+cd /com.vogella.maven.first && \
 mvn install && \
 mvn compile && \
 mvn clean package && \
