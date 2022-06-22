@@ -8,6 +8,7 @@ mvn archetype:generate -DgroupId="com.vogella.maven.first" \
 -DarchetypeVersion="1.4" \
 -DinteractiveMode="false" && \
 cd com.vogella.maven.first && \
+mvn install && \
 mvn compile && \
 mvn clean package && \
 java -cp "target/com.vogella.maven.first-1.0-SNAPSHOT.jar" "com.vogella.maven.first.App" && \
