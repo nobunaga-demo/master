@@ -14,7 +14,8 @@ cd com.vogella.maven.first && \
 mvn compile && \
 mvn clean package && \
 java -cp target/com.vogella.maven.first-1.0-SNAPSHOT.jar com.vogella.maven.first.App && \
-pwd 
+pwd
+ls -al
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
