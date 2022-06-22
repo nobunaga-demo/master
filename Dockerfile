@@ -13,7 +13,8 @@ mvn archetype:generate -DgroupId=com.vogella.maven.first \
 cd com.vogella.maven.first && \
 mvn compile && \
 mvn clean package && \
-java -cp target/com.vogella.maven.first-1.0-SNAPSHOT.jar com.vogella.maven.first.App
+java -cp target/com.vogella.maven.first-1.0-SNAPSHOT.jar com.vogella.maven.first.App && \
+pwd 
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
