@@ -12,7 +12,7 @@ mvn compile && \
 mvn clean package && \
 java -cp target/com.vogella.maven.first-1.0-SNAPSHOT.jar com.vogella.maven.first.App && \
 cp /usr/share/maven/conf/settings.xml /root/.m2/ && \
-ls ~/.m2
+ls -al /root/.m2/
 
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
